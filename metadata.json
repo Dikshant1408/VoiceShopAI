@@ -1,0 +1,9 @@
+
+{
+  "name": "VoiceShop AI Pro",
+  "description": "Multimodal AI shopping assistant with real-time voice, vision scanning, and Google Search grounding.",
+  "requestFramePermissions": [
+    "microphone",
+    "camera"
+  ]
+}
