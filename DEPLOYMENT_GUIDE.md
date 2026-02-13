@@ -42,9 +42,14 @@ vercel
 - Vercel auto-detects Vite configuration
 
 4. **Add Environment Variable**
-- Go to Project Settings → Environment Variables
-- Add: `API_KEY` = `your_gemini_api_key`
-- Redeploy
+- Go to your project in Vercel Dashboard
+- Navigate to: Settings → Environment Variables
+- Click "Add New"
+- Key: `API_KEY`
+- Value: `your_gemini_api_key_here`
+- Select all environments (Production, Preview, Development)
+- Click "Save"
+- Go to Deployments tab and click "Redeploy" on the latest deployment
 
 5. **Done!** 🎉
 Your app is live at `https://your-project.vercel.app`

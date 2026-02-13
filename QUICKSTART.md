@@ -140,14 +140,22 @@ When prompted, allow:
 npm install -g vercel
 vercel
 ```
-Add `API_KEY` in Vercel dashboard → Settings → Environment Variables
+**Add Environment Variable:**
+1. Go to Vercel dashboard → Your Project → Settings → Environment Variables
+2. Click "Add New"
+3. Key: `API_KEY`, Value: your Gemini API key
+4. Select all environments (Production, Preview, Development)
+5. Save and redeploy from Deployments tab
 
 ### Netlify
 ```bash
 npm install -g netlify-cli
 netlify deploy --prod
 ```
-Add `API_KEY` in Netlify dashboard → Site settings → Environment variables
+**Add Environment Variable:**
+1. Go to Netlify dashboard → Site settings → Environment variables
+2. Add: Key = `API_KEY`, Value = your Gemini API key
+3. Trigger redeploy
 
 ### Firebase
 ```bash
@@ -155,7 +163,8 @@ npm install -g firebase-tools
 npm run build
 firebase deploy
 ```
-Configure environment in Firebase console
+**Add Environment Variable:**
+Configure `API_KEY` in Firebase Console → Project Settings
 
 ## 📚 Next Steps
 

@@ -142,13 +142,34 @@ npm run preview
 ## 🚀 Deployment
 
 ### Recommended Platforms
-- **Vercel**: Zero-config deployment with environment variables
+- **Vercel**: Zero-config deployment with environment variables ([Step-by-step guide](./VERCEL_SETUP.md))
 - **Netlify**: Automatic builds from Git
 - **Firebase Hosting**: Google Cloud integration
 - **AWS Amplify**: Full-stack deployment
 
-### Environment Variables
-Ensure `API_KEY` is set in your hosting platform's environment configuration.
+### Environment Variables Setup
+
+**Important**: You must add the `API_KEY` environment variable in your hosting platform:
+
+**Vercel:** (See [VERCEL_SETUP.md](./VERCEL_SETUP.md) for detailed guide)
+1. Deploy your app: `vercel`
+2. Go to project dashboard → Settings → Environment Variables
+3. Add: Key = `API_KEY`, Value = your Gemini API key
+4. Select all environments (Production, Preview, Development)
+5. Redeploy from Deployments tab
+
+**Netlify:**
+1. Deploy your app: `netlify deploy --prod`
+2. Go to Site settings → Environment variables
+3. Add: Key = `API_KEY`, Value = your Gemini API key
+4. Trigger redeploy
+
+**Firebase:**
+1. Build: `npm run build`
+2. Deploy: `firebase deploy`
+3. Add environment config in Firebase Console
+
+See [DEPLOYMENT_GUIDE.md](./DEPLOYMENT_GUIDE.md) for detailed instructions.
 
 ## 📊 Performance Optimizations
 
